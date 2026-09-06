@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { href } from "../router"
+import { Link } from 'react-router-dom'
 
 const links = [
   { to: "/catalog", label: "Pieces" },
@@ -88,9 +89,9 @@ export default function Shell({ route, children }) {
           </div>
           <div>
             <p className="text-[11px] uppercase tracking-[0.24em] text-gold">Studio</p>
-            <p className="mt-3 text-sm text-mute">Lagos · by appointment</p>
-            <p className="mt-1 text-sm text-mute">hello@vicelamoda.studio</p>
-            <p className="mt-1 text-sm text-mute">+234 800 000 0000</p>
+            <p className="mt-3 text-sm text-mute">Benin · by appointment</p>
+            <a href="mailto:gp@gmail.com"  className="mt-3 text-sm text-mute">gp@gmail.com</a><br />
+           <a href="https://wa.me/2347025157460" target="_blank" rel="noopener noreferrer"  className="mt-3 text-sm text-mute">2347025157460</a>
           </div>
           <div>
             <p className="text-[11px] uppercase tracking-[0.24em] text-gold">Move</p>
